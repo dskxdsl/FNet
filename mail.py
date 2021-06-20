@@ -2,15 +2,15 @@ import smtplib
 from email.mime.text import MIMEText
 from email.utils import formataddr
 
-my_sender = '1379526213@qq.com'  # 发件人邮箱账号
-my_pass = 'fdvqockzsjeiiajg'  # 发件人邮箱密码
-my_user = '1379526213@qq.com'  # 收件人邮箱账号，我这边发送给自己
+my_sender = '*****'  # 发件人邮箱账号
+my_pass = '*****'  # 发件人邮箱密码
+my_user = '*****'  # 收件人邮箱账号，我这边发送给自己
 
 # sender_name = "Admin"
 # user = "fgf"
 # mail_title = "实验通知"
 # msg = '这是一封测试邮件！'
-def mail(my_user = '1379526213@qq.com', sender_name="Admin",user="fgf",mail_title="实验通知",msg='这是一封测试邮件！'):
+def mail(my_user = '*****', sender_name="Admin",user="fgf",mail_title="实验通知",msg='这是一封测试邮件！'):
     ret = True
     try:
         msg = MIMEText(msg, 'plain', 'utf-8')
